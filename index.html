@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashish Mohod - Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      animation: fadeInDown 1.5s;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      animation: fadeInUp 2s;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+    .skills, .projects, .certs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2c3e50;
+      color: white;
+      margin-top: 2rem;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ashish Mohod</h1>
+    <p>Full Stack Python Developer (Python, SQL & HTML5)</p>
+    <p>📍 Nagpur | ✉️ <a href="mailto:ashishmohod101@gmail.com" style="color:white;">ashishmohod101@gmail.com</a> | 📞 +91-9049623941</p>
+  </header>
+
+  <section>
+    <h2>Professional Summary</h2>
+    <p>Self-motivated and detail-Oriented Full Stack Python Developer with hands-on experience in Python, Django, Flask, SQL, HTML5, and React.js. Skil in designing and developing web applications, APIs, and database-driven systems. Strong foundation in relational databases, backend logic, and REST API development. Quick learner with the ability to adapt and contribute effectively in dynamic environments.</p>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <div class="card"><b>Languages & Frameworks:</b> Python, SQL, JavaScript, React.js, HTML5, CSS, Django, Flask</div>
+      <div class="card"><b>Databases:</b> MySQL, PostgreSQL, SQLite</div>
+      <div class="card"><b>Core Concepts:</b> REST APIs, CRUD operations, Django ORM, Joins, Views</div>
+      <div class="card"><b>Soft Skills:</b> Strong communication, Always ready to learn</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p><b>B.E – Mechanical Engineering</b><br>Priyadarshini College of Engineering, Nagpur</p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Student Management System</h3>
+        <p>Django + SQLite - Designed and implemented CRUD operations for student records and teacher assignments. Utilized Django ORM for handling complex queries and filters.</p>
+      </div>
+      <div class="card">
+        <h3>Hospital Database System</h3>
+        <p>Python + MySQL - Designed database schema and executed raw SQL queries. Implemented JOINs and subqueries to generate analytical reports.</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Flask + HTML5 - Developed a personal portfolio website showcasing projects and skills. Implemented routing, templates, and responsive design using Flask and HTML5.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <div class="certs">
+      <div class="card">PYTHON & SQL</div>
+      <div class="card">Full Stack  Python Web Developer</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Ashish Mohod | Built by using HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script>
+    // Reveal sections on scroll
+    const sections = document.querySelectorAll('section');
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if(rect.top < triggerBottom) {
+          section.classList.add('visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+</body>
+</html>
