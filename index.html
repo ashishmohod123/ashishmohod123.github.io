@@ -2,186 +2,164 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ashish Mohod | Full Stack Python Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- ATS & SEO -->
-  <meta name="description" content="Ashish Mohod - Full Stack Python Developer Fresher skilled in Python, Django, React, PostgreSQL">
-  <meta name="keywords" content="Full Stack Python Developer, Django Developer, Fresher, React, PostgreSQL">
-
+  <title>Ashish Mohod - Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #0f172a;
-      color: #e5e7eb;
-      line-height: 1.6;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+      scroll-behavior: smooth;
     }
     header {
+      background: #2c3e50;
+      color: white;
       text-align: center;
-      padding: 60px 20px;
-      background: #020617;
+      padding: 2rem 1rem;
     }
-    h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      animation: fadeInDown 1.5s;
     }
-    h2 {
-      color: #38bdf8;
-      margin-top: 40px;
-    }
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
-      background: #22c55e;
-      color: #020617;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-    .btn.blue {
-      background: #38bdf8;
+    header p {
+      margin: 0.5rem 0 0;
+      animation: fadeInUp 2s;
     }
     section {
       max-width: 900px;
-      margin: auto;
-      padding: 20px;
+      margin: 2rem auto;
+      padding: 1rem;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease;
     }
-    ul {
-      padding-left: 20px;
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+    .skills, .projects, .certs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
     footer {
       text-align: center;
-      padding: 20px;
-      background: #020617;
-      margin-top: 40px;
+      padding: 1rem;
+      background: #2c3e50;
+      color: white;
+      margin-top: 2rem;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
-
 <body>
+  <header>
+    <h1>Ashish Mohod</h1>
+    <p>Full Stack Python Developer (Python, SQL & HTML5)</p>
+    <p>📍 Nagpur | ✉️ <a href="mailto:ashishmohod101@gmail.com" style="color:white;">ashishmohod101@gmail.com</a> | 📞 +91-9049623941</p>
+  </header>
 
-<header>
-  <h1>Ashish Mohod</h1>
-  <p>Full Stack Python Developer (Fresher)</p>
-  <p>Python | Django | Django REST | React | PostgreSQL</p>
+  <section>
+    <h2>Professional Summary</h2>
+    <p>Self-motivated and detail-Oriented Full Stack Python Developer with hands-on experience in Python, Django, Flask, SQL, HTML5, and React.js. Skil in designing and developing web applications, APIs, and database-driven systems. Strong foundation in relational databases, backend logic, and REST API development. Quick learner with the ability to adapt and contribute effectively in dynamic environments.</p>
+  </section>
 
-  <!-- Buttons -->
-  <a class="btn" href="./resume.pdf" target="_blank">Download Resume</a>
-  <a class="btn blue" href="mailto:ashishmohod123@gmail.com">Contact</a>
-  <a class="btn blue" href="https://www.linkedin.com/in/ashish-mohod-5103081b7" target="_blank">LinkedIn</a>
-</header>
-
-<section>
-  <h2>About Me</h2>
-  <p>
-    I am a fresher Full Stack Python Developer with hands-on experience in building
-    web applications using Python, Django, Django REST Framework, React, and PostgreSQL.
-    I am passionate about backend development and API creation.
-  </p>
-
-  <h2>Skills</h2>
-  <ul>
-    <li>Python, Django, Django REST Framework</li>
-    <li>HTML, CSS, JavaScript, React</li>
-    <li>PostgreSQL, MySQL</li>
-    <li>Git, GitHub</li>
-  </ul>
-
-  <h2>Projects</h2>
-  <ul>
-    <li>
-      <strong>Employee Management System</strong><br>
-      Full stack web application using Django and React with CRUD operations and REST APIs.
-    </li>
-    <li>
-      <strong>Hospital Management System</strong><br>
-      Django-based application for managing patients, doctors, and appointments.
-    </li>
-  </ul>
-
-  <h2>Education</h2>
-  <p>
-    (Add your education details here)
-  </p>
-</section>
-
-<footer>
-  <p>© 2026 Ashish Mohod</p>
-</footer>
-
-</body>
-</html>      <p>
-        HTML5, CSS3, JavaScript, React.js,
-        Responsive Web Design, API Integration
-      </p>
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <div class="card"><b>Languages & Frameworks:</b> Python, SQL, JavaScript, React.js, HTML5, CSS, Django, Flask</div>
+      <div class="card"><b>Databases:</b> MySQL, PostgreSQL, SQLite</div>
+      <div class="card"><b>Core Concepts:</b> REST APIs, CRUD operations, Django ORM, Joins, Views</div>
+      <div class="card"><b>Soft Skills:</b> Strong communication, Always ready to learn</div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Database & Tools</h3>
-      <p>
-        PostgreSQL, MySQL, SQL,
-        Git, GitHub, VS Code,
-        Web Deployment
-      </p>
-    </div>
+  <section>
+    <h2>Education</h2>
+    <p><b>B.E – Mechanical Engineering</b><br>Priyadarshini College of Engineering, Nagpur</p>
+  </section>
+
+  <section id="projects">
+  <h2>My Projects</h2>
+  
+  <div class="Project">
+    <h3>1. Employee Management System</h3>
+    <p>A web app built with Django to manage employees, attendance, and salary records.</p>
+    <a href="https://github.com/ashishmohod123/employee-management" target="_blank"></a>
+  </div>
+
+  <div class="project">
+    <h3>2. Hospital Management System </h3>
+    <p>Developed a scalable Flask application leveraging SQL for seamless data management and a fast,reliable user experience.</p>
+    <a href="https://github.com/ashishmohod123/data-analysis" target="_blank"></a>
+  </div>
+
+    <div class="project">
+    <h3>3. Portfolio Website</h3>
+    <p>This very portfolio you are viewing, created using HTML/CSS and hosted on GitHub Pages.</p>
+    <a href="https://ashishmohod123.github.io" target="_blank"></a>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section>
-  <h2>Projects</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>Employee Management System – Full Stack Python Project</h3>
-      <p>
-        Developed a Full Stack web application using Python and Django REST Framework
-        to manage employee records. Implemented RESTful APIs, authentication,
-        CRUD functionality, and integrated React frontend with PostgreSQL database.
-      </p>
-      <p><strong>Technologies:</strong> Python, Django, DRF, React, PostgreSQL</p>
-      <a href="#" target="_blank">GitHub</a> | <a href="#" target="_blank">Live Demo</a>
+  <section>
+    <h2>Certifications</h2>
+    <div class="certs">
+      <div class="card">Full Stack Python Web Developer</div>
+      <div class="card">PYTHON & SQL</div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Hospital Management System – Django Project</h3>
-      <p>
-        Designed and developed a Django-based web application to manage patients,
-        doctors, appointments, and admin roles. Focused on backend development,
-        database management, and role-based access.
-      </p>
-      <p><strong>Technologies:</strong> Python, Django, HTML, CSS, SQL</p>
-      <a href="#" target="_blank">GitHub</a>
-    </div>
+  <footer>
+    <p>© 2025 Ashish Mohod | Built by using HTML, CSS & JavaScript</p>
+  </footer>
 
-    <div class="card">
-      <h3>Personal Portfolio Website</h3>
-      <p>
-        Created a responsive personal portfolio website to showcase projects,
-        skills, and contact details. Optimized for ATS keywords and recruiter visibility.
-      </p>
-      <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-      <a href="https://ashishmohod123.github.io/portfolio/" target="_blank">Live Site</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- ATS HIDDEN KEYWORDS (DO NOT REMOVE) -->
-<section style="display:none;">
-  Full Stack Python Developer, Python Developer, Django Developer,
-  Backend Developer, Web Developer Fresher,
-  Django REST Framework, REST API Developer,
-  React Developer, SQL, PostgreSQL, CRUD Operations,
-  Authentication, Authorization, API Integration
-</section>
-
-<footer>
-  © 2026 Ashish Mohod | Full Stack Python Developer
-</footer>
-
+  <script>
+    // Reveal sections on scroll
+    const sections = document.querySelectorAll('section');
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if(rect.top < triggerBottom) {
+          section.classList.add('visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
 </body>
 </html>
